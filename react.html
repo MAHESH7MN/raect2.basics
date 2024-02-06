@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Example</title>
+  <style>
+    body {
+      font-family: system-ui;
+      background: #f06d06;
+      color: white;
+      text-align: center;
+    }
+    img {
+      height: 1000px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h3>above</h3>
+  <div id="root">
+    <!-- React application goes here -->
+    <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png">
+  </div>
+  <div id="rot"></div>
+
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script type="text/babel">
+    const container = document.getElementById("rot");
+    const element = <div>how is my react image</div>;
+    const reactRoot = ReactDOM.createRoot(container);
+    reactRoot.render(element);
+  </script>
+</body>
+</html>

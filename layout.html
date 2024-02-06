@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Template</title>
+  </head>
+  <body>
+    <div id="root">
+    </div>
+  </body>
+  <script src="https://www.unpkg.com/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://www.unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    // My Code goes here;
+  </script>
+
+
+<script>
+    const neww=React.createElement(
+        "div",{
+            
+            id:"container",
+            className:"cont",
+            style:{height:"200px",width:"500px",display:"flex",border:"1px solid red",backgroundColor:"pink",justifyContent:"center",gap:"20px",alignItems:"center"}
+
+
+    },[
+    
+    React.createElement("div",{style:{alignSelf:"flex-start"}},"parent"),
+    React.createElement("div", { style: { height: "100px", width: "90px", backgroundColor: "red" } } ),
+    React.createElement("div",{style:{height:"100px",width:"90px", backgroundColor:"yellow"}}),
+    React.createElement("div",{style:{height:"100px",width:"90px",backgroundColor:"green"}}),
+    React.createElement("div",{style:{height:"100px",width:"90px",backgroundColor:"purple"}}),
+
+      ]);
+
+      const jj=ReactDOM.createRoot(document.getElementById("root"))
+      jj.render(neww)
+</script>
+</html>
+
